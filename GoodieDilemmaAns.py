@@ -7,7 +7,7 @@ for i in range(4,len(text)):
     texti = temp[:temp.find(":")]
     d[int(temp[temp.find(":")+2:len(temp)])] = texti
 def print_ans(arr):
-    fo = open("answer.txt","w+")
+    fo = open("result.txt","w+")
     fo.write("The goodies selected for distribution are:\n\n")
     for i in arr:
         s = str(d[i])+": "+str(i)+"\n"
